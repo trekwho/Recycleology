@@ -69,7 +69,7 @@ a {
 
 @media screen and (min-width: 64em) {
   .page-header {
-    padding: 5rem 8rem; } }
+    padding: 5rem 18rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .page-header {
