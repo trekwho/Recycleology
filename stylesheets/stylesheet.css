@@ -19,10 +19,6 @@ img{
   height:300px;   
 }
 
-h3, p{
-  text-align:right;
-  padding-left:20px;
-}
 
 .btn {
   display: inline-block;
