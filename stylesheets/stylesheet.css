@@ -29,6 +29,7 @@ h3{
 
 .food{
   display:block;
+  width:80%;
   float:center;
 }
 
@@ -68,7 +69,12 @@ h3{
     font-size: 0.9rem; }
     .btn + .btn {
       margin-top: 1rem;
-      margin-left: 0; } }
+      margin-left: 0; } 
+  
+  .food{
+    width:95%;
+  }
+}
 
 .page-header {
   color: #fff;
