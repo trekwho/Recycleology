@@ -29,7 +29,7 @@ h3{
 
 .food{
   display:block;
-  margin:auto;
+  float:center;
 }
 
 .btn {
@@ -237,12 +237,22 @@ h3{
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .main-content {
     padding: 2rem 4rem;
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+  img {
+    width: 80%;
+  }  
+  
+}
 
 @media screen and (max-width: 42em) {
   .main-content {
     padding: 2rem 1rem;
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  img {
+    width:95%;
+  }  
+  
+}
 
 .site-footer {
   padding-top: 2rem;
