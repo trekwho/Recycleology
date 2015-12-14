@@ -30,7 +30,7 @@ h3{
 .food{
   display:block;
   width:80%;
-  float:center;
+  margin:auto;
 }
 
 .btn {
