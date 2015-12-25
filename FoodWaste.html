@@ -21,273 +21,275 @@
   </section>
   <br>
   <br>
-  <p class="food">Amongst all the food and drink that has been bought each year, bread is most likely to be thrown away with a waste percentage of 31.8%, and it is followed by vegetables and potatoes' 24.4% and 23.6% respectively.</p>
-  <br>
-  <img src="https://wasteandrecycling.files.wordpress.com/2015/12/legend_w.png" alt="legend">  
-  <div class="food" id='myChart'></div>
-  <p class="food">Click <a href="https://github.com/trekwho/Recycleology/blob/gh-pages/FoodWaste.html">here</a> for code (powered by <a href="http://www.zingchart.com/?origin=http://trekwho.github.io&pathname=/Recycleology/FoodWaste.html">Zingchart</a>).</p>
-  <p class="food">For the whole infographic on "food waste in the UK", click <a href="https://wasteandrecycling.wordpress.com/2015/12/19/food-waste/">here</a>.</p>
-  <script>
-    zingchart.THEME = "classic";
-    var myConfig = {
-      "graphset": [{
-        "type": "gauge",
-        "background-color": "#fff",
-        "plot": {
-          "background-color": "#666"
-        },
-        "plotarea": {
-          "margin": "0 0 0 0"
-        },
-        "scale": {
-          "size-factor": 1.25,
-          "offset-y": 120
-        },
-        "tooltip": {
-          "background-color": "black"
-        },
-        "scale-r": {
-          "aperture":150,
-          "values": "0:40:5",
-          "border-color": "#b3b3b3",
-          "border-width": "2",
-          "background-color": "#eeeeee,#b3b3b3",
-          "ring": {
-            "size": 10,
-            "offset-r": "130px",
-            "rules": [{
-              "rule": "%v >=0 && %v < 10",
-              "background-color": "#348D00"
-            }, {
-              "rule": "%v >= 10 && %v < 20",
-              "background-color": "#FAC100"
-            }, {
-              "rule": "%v >= 20 && %v < 30",
-              "background-color": "#EC7928"
-            }, {
-              "rule": "%v >= 30 && %v < 40",
-              "background-color": "#FB0A02"
-            }]
-          }
-        },
-
-        "labels": [{
-          "id": "lbl1",
-          "x": "50%",
-          "y": "85%",
-          "width": 140,
-          "offsetX": 210,
-          "textAlign": "center",
-          "padding": 10,
-          "anchor": "c",
-          "text": "Outrageously High",
-          "backgroundColor": "#FB0A02",
+  <section class="main-content">
+    <p class="food">Amongst all the food and drink that has been bought each year, bread is most likely to be thrown away with a waste percentage of 31.8%, and it is followed by vegetables and potatoes' 24.4% and 23.6% respectively.</p>
+    <br>
+    <img src="https://wasteandrecycling.files.wordpress.com/2015/12/legend_w.png" alt="legend">  
+    <div class="food" id='myChart'></div>
+    <p class="food">Click <a href="https://github.com/trekwho/Recycleology/blob/gh-pages/FoodWaste.html">here</a> for code (powered by <a href="http://www.zingchart.com/?origin=http://trekwho.github.io&pathname=/Recycleology/FoodWaste.html">Zingchart</a>).</p>
+    <p class="food">For the whole infographic on "food waste in the UK", click <a href="https://wasteandrecycling.wordpress.com/2015/12/19/food-waste/">here</a>.</p>
+    <script>
+      zingchart.THEME = "classic";
+      var myConfig = {
+        "graphset": [{
+          "type": "gauge",
+          "background-color": "#fff",
+          "plot": {
+            "background-color": "#666"
+          },
+          "plotarea": {
+            "margin": "0 0 0 0"
+          },
+          "scale": {
+            "size-factor": 1.25,
+            "offset-y": 120
+          },
           "tooltip": {
-            "padding": 10,
-            "backgroundColor": "#ea0901",
-            "text": "> 30%",
-            "shadow": 0
-          }
-        }, {
-          "id": "lbl2",
-          "x": "50%",
-          "y": "83%",
-          "width": 140,
-          "offsetX": 70,
-          "textAlign": "center",
-          "padding": 10,
-          "anchor": "c",
-          "text": "Surprisingly High",
-          "backgroundColor": "#EC7928",
-          "tooltip": {
-            "padding": 10,
-            "backgroundColor": "#da6817",
-            "text": "> 20% < 30%",
-            "shadow": 0
-          }
-        }, {
-          "id": "lbl3",
-          "x": "50%",
-          "y": "83%",
-          "width": 140,
-          "offsetX": -70,
-          "textAlign": "center",
-          "padding": 10,
-          "anchor": "c",
-          "text": "Quite High",
-          "backgroundColor": "#FAC100",
-          "tooltip": {
-            "padding": 10,
-            "backgroundColor": "#e9b000",
-            "text": "> 10% < 20%",
-            "shadow": 0
-          }
-        }, {
-          "id": "lbl4",
-          "x": "50%",
-          "y": "85%",
-          "width": 140,
-          "offsetX": -210,
-          "textAlign": "center",
-          "padding": 10,
-          "anchor": "c",
-          "text": "Slightly High",
-          "backgroundColor": "#B1AD00",
-          "tooltip": {
-            "padding": 10,
-            "backgroundColor": "#348D00",
-            "text": "< 10%",
-            "shadow": 0
-          }
-        }],
-        "series": [{
-          "values": [15.0],
-          "csize":"10%",
-          "size":"100%",
-          "background-color":"#ebc844",
-          "animation": {
-            "method": 5,
-            "effect": 2,
-            "sequence": 1,
-            "delay": 500,
-            "speed": 1500
-          }},{
-          "values": [16.7],
-          "csize":"10%",
-          "size":"100%",
-          "background-color":"#ecbc06",
-          "animation": {
-            "method": 5,
-            "effect": 2,
-            "sequence": 1,
-            "delay": 500,
-            "speed": 1500
-          }},{
-          "values": [31.8],
-          "csize":"5%",
-          "size":"80%",
-          "background-color":"#c02e1d",
-          "animation": {
-            "method": 5,
-            "effect": 2,
-            "sequence": 1,
-            "delay": 500,
-            "speed": 1500
-          }},{
-          "values": [24.4],
-          "csize":"5%",
-          "size":"80%",
-          "background-color":"#d94e1f",
-          "animation": {
-            "method": 5,
-            "effect": 2,
-            "sequence": 1,
-            "delay": 500,
-            "speed": 1500
-          }},{
-          "values": [23.6],
-          "csize":"5%",
-          "size":"80%",
-          "background-color":"#f16c20",
-          "animation": {
-            "method": 5,
-            "effect": 2,
-            "sequence": 1,
-            "delay": 500,
-            "speed": 1500
-          }},{
-          "values": [19.8],
-          "csize":"5%",
-          "size":"80%",
-          "background-color":"#ef8b2c",
-          "animation": {
-            "method": 5,
-            "effect": 2,
-            "sequence": 1,
-            "delay": 500,
-            "speed": 1500
-          }},{
-          "values": [17.0],
-          "csize":"5%",
-          "size":"80%",
-          "background-color":"#ecaa38",
-          "animation": {
-            "method": 5,
-            "effect": 2,
-            "sequence": 1,
-            "delay": 500,
-            "speed": 1500
-          }},{
-          "values": [14.4],
-          "csize":"5%",
-          "size":"80%",
-          "background-color":"#f8d657",
-          "animation": {
-            "method": 5,
-            "effect": 2,
-            "sequence": 1,
-            "delay": 500,
-            "speed": 1500
-          }},{
-          "values": [13.1],
-          "csize":"5%",
-          "size":"80%",
-          "background-color":"#f9e28c",
-          "animation": {
-            "method": 5,
-            "effect": 2,
-            "sequence": 1,
-            "delay": 500,
-            "speed": 1500
-          }},{
-          "values": [8.5],
-          "csize":"5%",
-          "size":"80%",
-          "background-color":"#a2b86c",
-          "animation": {
-            "method": 5,
-            "effect": 2,
-            "sequence": 1,
-            "delay": 500,
-            "speed": 1500
-          }},{
-          "values": [7.1],
-          "csize":"5%",
-          "size":"80%",
-          "background-color":"#5ca793",
-          "animation": {
-            "method": 5,
-            "effect": 2,
-            "sequence": 1,
-            "delay": 500,
-            "speed": 1500
-          }},{
-          "values": [6.3],
-          "csize":"5%",
-          "size":"80%",
-          "background-color":"#45a074",
-          "animation": {
-            "method": 5,
-            "effect": 2,
-            "sequence": 1,
-            "delay": 500,
-            "speed": 1500
-          }},],
-        "alpha": 1
-      }]
-    };
-
-    zingchart.render({
-      id: 'myChart',
-      data: myConfig,
-      height: "auto",
-      width: "auto"
-    });
-  </script>
+            "background-color": "black"
+          },
+          "scale-r": {
+            "aperture":150,
+            "values": "0:40:5",
+            "border-color": "#b3b3b3",
+            "border-width": "2",
+            "background-color": "#eeeeee,#b3b3b3",
+            "ring": {
+              "size": 10,
+              "offset-r": "130px",
+              "rules": [{
+                "rule": "%v >=0 && %v < 10",
+                "background-color": "#348D00"
+              }, {
+                "rule": "%v >= 10 && %v < 20",
+                "background-color": "#FAC100"
+              }, {
+                "rule": "%v >= 20 && %v < 30",
+                "background-color": "#EC7928"
+              }, {
+                "rule": "%v >= 30 && %v < 40",
+                "background-color": "#FB0A02"
+              }]
+            }
+          },
   
-  <footer class="site-footer">
-      <span class="site-footer-owner">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/trekwho/Recycleology/tree/gh-pages">Recycleology</a> is maintained by <a href="https://yuqinghere.wordpress.com">Yuqing</a>.</span>
-  </footer>
+          "labels": [{
+            "id": "lbl1",
+            "x": "50%",
+            "y": "85%",
+            "width": 140,
+            "offsetX": 210,
+            "textAlign": "center",
+            "padding": 10,
+            "anchor": "c",
+            "text": "Outrageously High",
+            "backgroundColor": "#FB0A02",
+            "tooltip": {
+              "padding": 10,
+              "backgroundColor": "#ea0901",
+              "text": "> 30%",
+              "shadow": 0
+            }
+          }, {
+            "id": "lbl2",
+            "x": "50%",
+            "y": "83%",
+            "width": 140,
+            "offsetX": 70,
+            "textAlign": "center",
+            "padding": 10,
+            "anchor": "c",
+            "text": "Surprisingly High",
+            "backgroundColor": "#EC7928",
+            "tooltip": {
+              "padding": 10,
+              "backgroundColor": "#da6817",
+              "text": "> 20% < 30%",
+              "shadow": 0
+            }
+          }, {
+            "id": "lbl3",
+            "x": "50%",
+            "y": "83%",
+            "width": 140,
+            "offsetX": -70,
+            "textAlign": "center",
+            "padding": 10,
+            "anchor": "c",
+            "text": "Quite High",
+            "backgroundColor": "#FAC100",
+            "tooltip": {
+              "padding": 10,
+              "backgroundColor": "#e9b000",
+              "text": "> 10% < 20%",
+              "shadow": 0
+            }
+          }, {
+            "id": "lbl4",
+            "x": "50%",
+            "y": "85%",
+            "width": 140,
+            "offsetX": -210,
+            "textAlign": "center",
+            "padding": 10,
+            "anchor": "c",
+            "text": "Slightly High",
+            "backgroundColor": "#B1AD00",
+            "tooltip": {
+              "padding": 10,
+              "backgroundColor": "#348D00",
+              "text": "< 10%",
+              "shadow": 0
+            }
+          }],
+          "series": [{
+            "values": [15.0],
+            "csize":"10%",
+            "size":"100%",
+            "background-color":"#ebc844",
+            "animation": {
+              "method": 5,
+              "effect": 2,
+              "sequence": 1,
+              "delay": 500,
+              "speed": 1500
+            }},{
+            "values": [16.7],
+            "csize":"10%",
+            "size":"100%",
+            "background-color":"#ecbc06",
+            "animation": {
+              "method": 5,
+              "effect": 2,
+              "sequence": 1,
+              "delay": 500,
+              "speed": 1500
+            }},{
+            "values": [31.8],
+            "csize":"5%",
+            "size":"80%",
+            "background-color":"#c02e1d",
+            "animation": {
+              "method": 5,
+              "effect": 2,
+              "sequence": 1,
+              "delay": 500,
+              "speed": 1500
+            }},{
+            "values": [24.4],
+            "csize":"5%",
+            "size":"80%",
+            "background-color":"#d94e1f",
+            "animation": {
+              "method": 5,
+              "effect": 2,
+              "sequence": 1,
+              "delay": 500,
+              "speed": 1500
+            }},{
+            "values": [23.6],
+            "csize":"5%",
+            "size":"80%",
+            "background-color":"#f16c20",
+            "animation": {
+              "method": 5,
+              "effect": 2,
+              "sequence": 1,
+              "delay": 500,
+              "speed": 1500
+            }},{
+            "values": [19.8],
+            "csize":"5%",
+            "size":"80%",
+            "background-color":"#ef8b2c",
+            "animation": {
+              "method": 5,
+              "effect": 2,
+              "sequence": 1,
+              "delay": 500,
+              "speed": 1500
+            }},{
+            "values": [17.0],
+            "csize":"5%",
+            "size":"80%",
+            "background-color":"#ecaa38",
+            "animation": {
+              "method": 5,
+              "effect": 2,
+              "sequence": 1,
+              "delay": 500,
+              "speed": 1500
+            }},{
+            "values": [14.4],
+            "csize":"5%",
+            "size":"80%",
+            "background-color":"#f8d657",
+            "animation": {
+              "method": 5,
+              "effect": 2,
+              "sequence": 1,
+              "delay": 500,
+              "speed": 1500
+            }},{
+            "values": [13.1],
+            "csize":"5%",
+            "size":"80%",
+            "background-color":"#f9e28c",
+            "animation": {
+              "method": 5,
+              "effect": 2,
+              "sequence": 1,
+              "delay": 500,
+              "speed": 1500
+            }},{
+            "values": [8.5],
+            "csize":"5%",
+            "size":"80%",
+            "background-color":"#a2b86c",
+            "animation": {
+              "method": 5,
+              "effect": 2,
+              "sequence": 1,
+              "delay": 500,
+              "speed": 1500
+            }},{
+            "values": [7.1],
+            "csize":"5%",
+            "size":"80%",
+            "background-color":"#5ca793",
+            "animation": {
+              "method": 5,
+              "effect": 2,
+              "sequence": 1,
+              "delay": 500,
+              "speed": 1500
+            }},{
+            "values": [6.3],
+            "csize":"5%",
+            "size":"80%",
+            "background-color":"#45a074",
+            "animation": {
+              "method": 5,
+              "effect": 2,
+              "sequence": 1,
+              "delay": 500,
+              "speed": 1500
+            }},],
+          "alpha": 1
+        }]
+      };
+  
+      zingchart.render({
+        id: 'myChart',
+        data: myConfig,
+        height: "auto",
+        width: "auto"
+      });
+    </script>
+    
+    <footer class="site-footer">
+        <span class="site-footer-owner">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/trekwho/Recycleology/tree/gh-pages">Recycleology</a> is maintained by <a href="https://yuqinghere.wordpress.com">Yuqing</a>.</span>
+    </footer>
+  </section>
 </body>
 
 </html>
