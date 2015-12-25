@@ -295,7 +295,7 @@
       .sy-caption-wrap .sy-caption {
         left: 0;
         padding: 0.2em 0.4em;
-        font-size: 0.8em;
+        font-size: 10px;
         -moz-border-radius: 0;
         -webkit-border-radius: 0;
         border-radius: 0; } }
