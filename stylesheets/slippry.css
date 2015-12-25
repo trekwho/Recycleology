@@ -382,6 +382,7 @@ body{
 }
 .news-slider .image-content img {
   max-width: 100%;
+  float:right;
 }
 .news-slider .news-pager {
   text-align: right;
