@@ -56,20 +56,20 @@ body{
 a{color: #2fa0ec;text-decoration: none;outline: none;}
 a:hover,a:focus{color:#fff;}
 
-.htmleaf-container{
+.bin-container{
 	margin: 0 auto;
 	overflow: hidden;
 }
-.htmleaf-content {
+.bin-content {
 	padding: 1em 15em;
 }
 @media only screen and (max-width: 1024px){
-	.htmleaf-content {
+	.bin-content {
 		padding: 1em 5em;
 	}
 }
 @media only screen and (max-width: 768px){
-	.htmleaf-content {
+	.bin-content {
 		padding: 1em 0;
 	}
 }
@@ -87,13 +87,13 @@ a:hover,a:focus{color:#fff;}
 .bgcolor-12{ background: #3498DB; color: #fff;}/*light blue*/
 .bgcolor-20{ background: #494A5F;color: #D5D6E2;}
 /* Header */
-.htmleaf-header{
+.bin-header{
 	padding: 1em 190px 1em;
 	letter-spacing: -1px;
 	text-align: center;
 	background: #66677c;
 }
-.htmleaf-header h1 {
+.bin-header h1 {
 	color: #D5D6E2;
 	font-weight: 600;
 	font-size: 2em;
@@ -101,7 +101,7 @@ a:hover,a:focus{color:#fff;}
 	margin-bottom: 0;
 	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
 }
-.htmleaf-header h1 span {
+.bin-header h1 span {
 	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
 	display: block;
 	font-size: 60%;
@@ -110,14 +110,14 @@ a:hover,a:focus{color:#fff;}
 	color: #c3c8cd;
 }
 /*nav*/
-.htmleaf-demo a{color: #fff;text-decoration: none;}
-.htmleaf-demo{width: 100%;padding-bottom: 1.2em;}
-.htmleaf-demo a{display: inline-block;margin: 0.5em;padding: 0.6em 1em;border: 3px solid #fff;font-weight: 700;}
-.htmleaf-demo a:hover{opacity: 0.6;}
-.htmleaf-demo a.current{background:#1d7db1;color: #fff; }
+.bin-demo a{color: #fff;text-decoration: none;}
+.bin-demo{width: 100%;padding-bottom: 1.2em;}
+.bin-demo a{display: inline-block;margin: 0.5em;padding: 0.6em 1em;border: 3px solid #fff;font-weight: 700;}
+.bin-demo a:hover{opacity: 0.6;}
+.bin-demo a.current{background:#1d7db1;color: #fff; }
 
 /* Top Navigation Style */
-.htmleaf-links {
+.bin-links {
 	position: relative;
 	display: inline-block;
 	white-space: nowrap;
@@ -125,7 +125,7 @@ a:hover,a:focus{color:#fff;}
 	text-align: center;
 }
 
-.htmleaf-links::after {
+.bin-links::after {
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -138,7 +138,7 @@ a:hover,a:focus{color:#fff;}
 	transform: rotate3d(0,0,1,22.5deg);
 }
 
-.htmleaf-icon {
+.bin-icon {
 	display: inline-block;
 	margin: 0.5em;
 	padding: 0em 0;
@@ -146,11 +146,11 @@ a:hover,a:focus{color:#fff;}
 	text-decoration: none;
 }
 
-.htmleaf-icon span {
+.bin-icon span {
 	display: none;
 }
 
-.htmleaf-icon:before {
+.bin-icon:before {
 	margin: 0 5px;
 	text-transform: none;
 	font-weight: normal;
@@ -162,8 +162,8 @@ a:hover,a:focus{color:#fff;}
 	-webkit-font-smoothing: antialiased;
 }
 /* footer */
-.htmleaf-footer{width: 100%;padding-top: 10px;}
-.htmleaf-small{font-size: 0.8em;}
+.bin-footer{width: 100%;padding-top: 10px;}
+.bin-small{font-size: 0.8em;}
 .center{text-align: center;}
 /****/
 .related {
@@ -217,32 +217,32 @@ a:hover,a:focus{color:#fff;}
 	color: #fff;
 }
 /* icomoon */
-.icon-htmleaf-home-outline:before {
+.icon-bin-home-outline:before {
 	content: "\e5000";
 }
 
-.icon-htmleaf-arrow-forward-outline:before {
+.icon-bin-arrow-forward-outline:before {
 	content: "\e5001";
 }
 
 @media screen and (max-width: 50em) {
-	.htmleaf-header {
+	.bin-header {
 		padding: 3em 10% 4em;
 	}
-	.htmleaf-header h1 {
+	.bin-header h1 {
         font-size:2em;
     }
 }
 
 
 @media screen and (max-width: 40em) {
-	.htmleaf-header h1 {
+	.bin-header h1 {
 		font-size: 1.5em;
 	}
 }
 
 @media screen and (max-width: 30em) {
-    .htmleaf-header h1 {
+    .bin-header h1 {
         font-size:1.2em;
     }
 }
