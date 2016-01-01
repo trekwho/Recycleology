@@ -21,13 +21,14 @@ function initMap() {
 
   var marker = new google.maps.Marker({
     position: myLatLng,
-    map: map
+    map: map,
+    title: 'Hello World!'
   });
 }
 
     </script>
     <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKyXGz0padGImqQRc4pxHuYxnziFMHRRc&callback=initMap">
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKyXGz0padGImqQRc4pxHuYxnziFMHRRc&signed_in=true&callback=initMap">
     </script>
   </body>
 </html>
