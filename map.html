@@ -12,12 +12,9 @@
     <script>
 
 function initMap() {
-  var myLatLng = {lat: 42.83333333, lng:12.83333333};
-  var myLatLng2 ={lat:1, lng:80}
-
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 2,
-    center: myLatLng
+    center: {lat:42.83333333, lng:12.83333333}
   });
 
   var marker = new google.maps.Marker({
@@ -26,11 +23,6 @@ function initMap() {
     title: 'Hello World!'
   });
   
-  var marker2 = new google.maps.Marker({
-    position: myLatLng2,
-    map: map,
-    title: 'Hello World!'
-  });
 }
 
     </script>
