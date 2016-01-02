@@ -200,6 +200,7 @@ These apply to main content (function & return) part
 }
 
 #map{
+  display: none;
   height: 50%;
 }
 
