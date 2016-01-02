@@ -203,6 +203,7 @@ These apply to main content (function & return) part
   display: none;
   height: 400px;
   width: 90%;
+  margin-bottom: 1em;
 }
 
 #query_box{
