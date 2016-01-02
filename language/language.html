@@ -200,7 +200,7 @@
 			getResult();
 		});
 
-		function initMap(){
+		var initMap = function(){
 		 	var map = new google.maps.Map(document.getElementById('map'), {
 			  	zoom: 2,
 			    center: {lat:42.83333333, lng:12.83333333}
@@ -223,7 +223,7 @@
 		$("#get_map").click(function(){
 			$("#map").slideToggle(function(){
 				initMap();
-			};
+			});
 		});
 		
 	</script>
