@@ -221,7 +221,9 @@
 		};		
 
 		$("#get_map").click(function(){
-			initMap();
+			$("#map").slideToggle(function(){
+				initMap();
+			};
 		});
 		
 	</script>
