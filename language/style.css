@@ -1,14 +1,14 @@
-/*
-...................................................................
+/*...................................................................
 Catalogue:
 - line 12 whole page
-
-
-
-
-
-...................................................................
-*/
+- line 57 header
+- line 112 main content
+- line 271 intro & ending part
+- line 368 footer
+- line 406 Responsive design (width < 800px)
+- line 513 Responsive design (width < 800px)
+- line 647 Responsive design (width < 800px)
+...................................................................*/
 /* -----------------------------------------------------------------
 
 The following rules apply to the whole page
@@ -270,7 +270,7 @@ form a:hover{
 
 /* -----------------------------------------------------------------
 
-These apply to introduction('how') part
+These apply to introduction('how') and ending part
 
 ------------------------------------------------------------------ */
 
@@ -333,31 +333,36 @@ These apply to introduction('how') part
   text-align: center;
 }
 
+.ending-info{
+  width: 50%;
+  margin:auto;
+  background-color: rgba(25, 155, 225,0.8);
+}
+
 .ending-info h3 {
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 700;
   margin: 3em 0 1em 0;
+  padding: 0.2em 0 0 0;
   /* text-stroke trick & alternative solution learned from https://css-tricks.com/adding-stroke-to-web-text/ */
   color: #8cbcd8;
   -webkit-text-fill-color: #fff;
-  -webkit-text-stroke: 1px #8cbcd8;
+  -webkit-text-stroke: 1.5px #8cbcd8;
 }
 
 .ending-info h5 {
-  color: #8cbcd8;
+  color: #fff;
   font-size: 14px;
   margin: 1em 0;
   line-height: 1.8em;
-  font-weight: 300; 
-  -webkit-text-stroke: 1px #fff;
+  font-weight: 500; 
 }
 
 .ending-info h5 a, .ending-info h5 a:hover, .ending-info h5 a:active, .ending-info h5 a:visited {
   font-size: 18px;
   cursor: pointer;
   text-decoration: none;
-  color: #8cbcd8;
-  -webkit-text-stroke: 1px #fff;
+  color: #fff;
 }
 
 /* -----------------------------------------------------------------
@@ -408,7 +413,7 @@ Responsive design when width is less than 800px
 
   .links {
     padding: 0.9em 15px;
-    width: 91.5%;
+    width: 92%;
   }
 
   .menu a {
@@ -417,7 +422,7 @@ Responsive design when width is less than 800px
   }
 
   .home {
-    width: 8.5%;
+    width: 8%;
     padding: 1em 0.3em;
   }
 
@@ -495,8 +500,12 @@ Responsive design when width is less than 800px
     padding: 3em 0 0 0;
   }
 
+  .ending-info{
+    width: 70%;
+  }
+
   .ending-info h3 {
-    margin: 1em 0 1em 0;  
+    margin: 0 0 0.5em 0;  
   }
 
 }
@@ -617,8 +626,12 @@ Responsive design when width is less than 480px
     margin: 1em 0;
   }
 
+  .ending-info{
+    width: 98%;
+  }
+
   .ending-info h3{
-    margin: 0.3em 0 0.3em 0;
+    margin: 0.1em 0 0.3em 0;
   }
 
   .thanks, .more{
@@ -629,8 +642,8 @@ Responsive design when width is less than 480px
     width: 100px;
     border-radius: 5px;
   }
-}
 
+}
 /* -----------------------------------------------------------------
 
 Responsive design when width is less than 320px
@@ -701,5 +714,5 @@ Responsive design when width is less than 320px
   .thanks p, .more p {
     line-height: 1.7em;
   }
-}
 
+}
