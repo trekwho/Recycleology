@@ -212,7 +212,7 @@
 			/*var marker, i;
 			for (i = 0; i < myLatLng.length; i++){
 			  	marker = new google.maps.Marker({
-			    position: myLatLng[i],
+			    position: new google.maps.LatLng(myLatLng[i][0],myLatLng[i][1]),
 			    map: map,
 			    title: 'Hello World!'
 			  	});	  
