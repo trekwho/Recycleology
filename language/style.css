@@ -202,7 +202,7 @@ These apply to main content (function & return) part
 #map{
   display: none;
   height: 400px;
-  width: 800px;
+  width: 90%;
 }
 
 #query_box{
