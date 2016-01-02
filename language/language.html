@@ -200,13 +200,13 @@
 			getResult();
 		});
 
-		var initMap = function() {
+		var initMap = function(){
 		 	var map = new google.maps.Map(document.getElementById('map'), {
 			  	zoom: 2,
 			    center: {lat:42.83333333, lng:12.83333333}
 			});
 		 	var marker = new google.maps.Marker({
-			    position: myLatLng[0],
+			    position: new google.maps.LatLng(myLatLng[0],myLatLng[1]),
 			    map: map,
 			    title: 'Hello World!'
 			  	});
@@ -218,7 +218,7 @@
 			    title: 'Hello World!'
 			  	});	  
 			}; */
-		}		
+		};		
 
 		$("#get_map").click(function(){
 			initMap();
