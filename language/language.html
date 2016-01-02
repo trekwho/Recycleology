@@ -180,7 +180,7 @@
                     for (var i=0; i < response.length; i++){
                     	lat = response[i]["latlng"][0];
                     	lng = response[i]["latlng"][1];
-                    	myLatLng.push("{lat:"+ lat +", lng:" + lng +"}");
+                    	myLatLng.push([lat,lng]);
                     	
                 	};
                 	console.log(myLatLng);
@@ -205,13 +205,18 @@
 			  	zoom: 2,
 			    center: {lat:42.83333333, lng:12.83333333}
 			});
-			var marker, i;
+		 	var marker = new google.maps.Marker({
+			    position: myLatLng[0],
+			    map: map,
+			    title: 'Hello World!'
+			  	});
+			/*var marker, i;
 			for (i = 0; i < myLatLng.length; i++){
 			  	marker = new google.maps.Marker({
 			    position: myLatLng[i],
 			    map: map,
 			    title: 'Hello World!'
-			  	});	  
+			  	});	  */
 			};
 		}		
 
