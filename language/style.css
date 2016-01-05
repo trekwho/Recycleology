@@ -2,16 +2,16 @@
 Catalogue:
 - line 12 whole page
 - line 57 header
-- line 112 main content
-- line 271 intro & ending part
-- line 368 footer
-- line 406 Responsive design (width < 800px)
-- line 513 Responsive design (width < 800px)
-- line 647 Responsive design (width < 800px)
+- line 111 main content
+- line 273 intro & ending part
+- line 370 footer
+- line 408 Responsive design (width < 800px)
+- line 515 Responsive design (width < 800px)
+- line 649 Responsive design (width < 800px)
 ...................................................................*/
 /* -----------------------------------------------------------------
 
-The following rules apply to the whole page
+The following rules apply to the whole page 
 
 ------------------------------------------------------------------ */
 
@@ -105,7 +105,6 @@ nav a {
 }
 
 .home img{
-  float: center;
   margin: auto;
 }
 
@@ -214,7 +213,6 @@ These apply to main content (function & return) part
 
 form{
   width: 30%;
-  float: center;
   margin: 0 auto;
   padding: 1.5em 0;
 }
@@ -236,6 +234,10 @@ form ul, form ol{
   font-size: 13px;
   line-height: 18px;
   font-family: Helvetica, sans-serif;
+}
+
+form li{
+  text-transform: capitalize;
 }
 
 form h4{
